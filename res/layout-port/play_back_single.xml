@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#fff4f4f4">
+  	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:layout_marginTop="73dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_marginRight="4dp">
+			
+			<TextView
+				android:layout_marginLeft="12dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="82dp"
+				android:text="  "
+				android:textColor="#ff041f39"
+				android:textSize="13sp"/>
+				
+			<TextView
+				android:layout_marginLeft="12dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="72dp"
+				android:text="  "
+				android:textColor="#ff041f39"
+				android:textSize="13sp"/>
+				
+			<TextView
+				android:layout_marginLeft="12dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="74dp"
+				android:text="  "
+				android:textColor="#ff041f39"
+				android:textSize="13sp"/>
+				
+			<RelativeLayout
+				android:layout_marginLeft="3dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				
+				<LinearLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="3dp"
+					android:orientation="vertical"
+					android:gravity="center_horizontal"
+					android:layout_alignParentBottom="true">
+					
+					<ImageButton
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:background="@drawable/zoom_up"
+						android:onClick="amplifyClicked"/>
+					
+					<TextView
+                        android:id="@+id/zoomUpDownText"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="2"
+						android:layout_marginTop="-3dp"
+						android:layout_marginBottom="-4dp"
+						android:textColor="#ff125ba8"
+						android:textSize="15.664sp"/>
+						
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="mm/mV"
+						android:textColor="#ff125ba8"
+						android:textSize="7.13sp"/>
+						
+					<ImageButton
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:background="@drawable/zoom_down"
+                        android:onClick="reduceClicked"/>
+					
+				</LinearLayout>
+			</RelativeLayout>
+			
+		</LinearLayout>
+		
+		<LinearLayout
+			android:layout_marginTop="82dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+			
+			<com.nasa.ecg.views.ECGLayout
+				android:id="@+id/ecgCurve"
+				android:layout_width="251dp"
+				android:layout_height="350dp" />
+				
+			<LinearLayout
+				android:layout_marginTop="2dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:background="@drawable/play_back_controls_bg">
+				
+				<LinearLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+					android:layout_marginTop="7dp">
+					
+					<ImageButton
+						android:layout_marginTop="2.67dp"
+						android:layout_marginLeft="55dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content" 
+						android:src="@drawable/rewind"
+						android:background="@drawable/button_background"
+						android:onClick="rewindClicked"/>
+						
+					<ImageButton
+                        android:id="@+id/playButton"
+						android:layout_marginLeft="33.6dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content" 
+						android:src="@drawable/play"
+						android:background="@drawable/button_background"
+						android:onClick="playClicked"/>
+						
+					<ImageButton
+						android:layout_marginLeft="33.6dp"
+						android:layout_marginTop="2.67dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content" 
+						android:src="@drawable/forward"
+						android:background="@drawable/button_background"
+						android:onClick="fastForwardClicked"/>
+					
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="12.8dp">
+					
+					<TextView
+						android:id="@+id/countUp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="6dp"
+						android:text="  00:05  "
+						android:textColor="@android:color/white"
+						android:textSize="8.5sp"
+						android:textStyle="bold"/>
+
+					<SeekBar
+						android:id="@+id/seekBar" 
+						android:layout_width="188dp"
+						android:layout_height="wrap_content"
+						style="@style/customSeekbar"
+						android:progress="0" />
+
+					<TextView
+						android:id="@+id/countDown"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="6dp"
+						android:text="  -00:05  "
+						android:textColor="@android:color/white"
+						android:textSize="8.5sp"
+						android:textStyle="bold"/>
+					
+				</LinearLayout>
+				
+			</LinearLayout>
+			
+		</LinearLayout>
+		
+		<LinearLayout
+			android:layout_marginTop="80dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+			
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="4dp"
+				android:text=" "
+				android:textColor="#ff041f39"
+				android:textSize="10sp"/>
+				
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="60dp"
+				android:text=" "
+				android:textColor="#ff041f39"
+				android:textSize="8.5sp"/>
+				
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:text=" "
+				android:textColor="#ff041f39"
+				android:textSize="8.5sp"/>
+				
+				
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="40dp"
+				android:text=" "
+				android:textColor="#ff041f39"
+				android:textSize="8.5sp"/>
+				
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:text=" "
+				android:textColor="#ff041f39"
+				android:textSize="8.5sp"/>
+				
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="40dp"
+				android:text=" "
+				android:textColor="#ff041f39"
+				android:textSize="8.5sp"/>
+				
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:text=" "
+				android:textColor="#ff041f39"
+				android:textSize="8.5sp"/>
+				
+			<RelativeLayout
+				android:layout_marginLeft="3dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				
+				<LinearLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="3dp"
+					android:orientation="vertical"
+					android:gravity="center_horizontal"
+					android:layout_alignParentBottom="true">
+					
+					<ImageButton
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:background="@drawable/zoom_left"
+						android:onClick="decompressClicked"/>
+					
+					<TextView
+						android:id="@+id/zoomLeftRightText"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="10"
+						android:layout_marginTop="-3dp"
+						android:layout_marginBottom="-4dp"
+						android:textColor="#ff125ba8"
+						android:textSize="15.664sp"/>
+						
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="mm/sec"
+						android:textColor="#ff125ba8"
+						android:textSize="7.13sp"/>
+						
+					<ImageButton
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:background="@drawable/zoom_right"
+						android:onClick="compressClicked"/>
+					
+				</LinearLayout>
+			</RelativeLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	
+	
+	<ImageView 
+	  	android:layout_width="match_parent"
+	  	android:layout_height="match_parent"
+	  	android:scaleType="fitXY"
+	  	android:src="@drawable/play_bg"/>
+
+	<LinearLayout
+	  android:orientation="vertical"
+	  android:layout_width="match_parent"
+	  android:layout_height="match_parent">
+	  	<RelativeLayout
+	  		android:layout_width="match_parent"
+	  		android:layout_height="wrap_content">
+	  		
+	  		<ImageButton
+	  			android:layout_width="wrap_content"
+	  			android:layout_height="wrap_content"
+	  			android:layout_marginTop="6dp"
+	  			android:layout_marginLeft="8dp"
+	  			android:layout_alignParentLeft="true"
+	  			android:background="@drawable/back_button"
+	  			android:onClick="backClicked"/>
+	  			
+	  		<ImageButton
+	  			android:layout_width="wrap_content"
+	  			android:layout_height="wrap_content"
+	  			android:layout_marginTop="6dp"
+	  			android:layout_marginRight="8dp"
+	  			android:layout_alignParentRight="true"
+	  			android:background="@drawable/home_button"
+	  			android:onClick="homeClicked"/>
+	  	</RelativeLayout>
+	  	
+	  	<RelativeLayout 
+	  		android:layout_width="match_parent"
+	  		android:layout_height="wrap_content"
+	  		
+	  		android:layout_marginLeft="5dp"
+	  		android:layout_marginRight="8dp">
+	  		<TextView
+	  			android:id="@+id/playName"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Demo Atrial Arrythmia"
+				android:textColor="@android:color/white"
+				android:textSize="14sp"/>
+				
+			<TextView
+				android:id="@+id/playCodeValue"
+				android:layout_alignBaseline="@id/playName"
+				android:layout_alignParentRight="true"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="000121199"
+				android:textColor="@android:color/white"
+				android:textSize="9sp"
+				android:gravity="right"
+				android:textStyle="italic"/>
+			<TextView
+				android:layout_toLeftOf="@id/playCodeValue"
+				android:layout_alignBaseline="@id/playName"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Code: "
+				android:textColor="@android:color/white"
+				android:textSize="9sp"
+				android:gravity="right"
+				android:textStyle="bold|italic"/>
+			
+
+	  		<TextView
+	  			android:id="@+id/playBorn"
+	  			android:layout_below="@id/playName"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="4dp"
+				android:text="Born: "
+				android:textColor="@android:color/white"
+				android:textSize="9sp"
+				android:textStyle="bold|italic"/>
+			<TextView
+				android:layout_toRightOf="@id/playBorn"
+				android:layout_below="@id/playName"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="4dp"
+				android:text="06/30/1983"
+				android:textColor="@android:color/white"
+				android:textSize="9sp"/>
+			
+			<TextView
+				android:id="@+id/playLastECGValue"
+				android:layout_alignParentRight="true"
+				android:layout_alignBaseline="@id/playBorn"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="07/31/1996"
+				android:textColor="@android:color/white"
+				android:textSize="9sp"
+				android:gravity="right"
+				android:textStyle="italic"/>
+
+			<TextView
+				android:layout_toLeftOf="@id/playLastECGValue"
+				android:layout_alignBaseline="@id/playBorn"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Last ECG: "
+				android:textColor="@android:color/white"
+				android:textSize="9sp"
+				android:gravity="right"
+				android:textStyle="bold|italic"/>
+			
+	  	</RelativeLayout>
+	  	
+	</LinearLayout>
+	
+</FrameLayout>

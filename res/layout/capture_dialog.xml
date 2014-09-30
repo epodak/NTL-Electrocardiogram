@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="@drawable/capture_bg"
+  android:layout_gravity="center">
+
+	
+	<LinearLayout
+		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:orientation="horizontal"
+  		android:layout_marginTop="97dp"
+  		android:layout_marginLeft="11.7dp">
+  		
+  		<EditText
+  			android:gravity="center"
+	 		android:paddingRight="2dp"
+	 		android:hint="hh"
+	 		android:layout_width="wrap_content"
+	 		android:layout_height="wrap_content"
+	 		android:background="@drawable/capture_time_bg"
+	 		android:textSize="13.4sp"
+	 		android:textColor="#ff828282"
+ 			android:textColorHint="#ff828282"
+ 			android:singleLine="true" />
+	 		
+	 	<TextView
+	 		android:layout_width="wrap_content"
+	 		android:layout_height="wrap_content"
+	 		android:text=" : "
+	 		android:textSize="13.4sp"
+	 		android:textColor="#ff828282" />
+	 		
+	 	<EditText
+	 		android:gravity="center"
+	 		android:paddingRight="2dp"
+	 		android:hint="mm"
+	 		android:layout_width="wrap_content"
+	 		android:layout_height="wrap_content"
+	 		android:background="@drawable/capture_time_bg"
+	 		android:textSize="13.4sp"
+	 		android:textColor="#ff828282"
+ 			android:textColorHint="#ff828282"
+ 			android:singleLine="true" />
+	 		
+	 	<TextView
+	 		android:layout_width="wrap_content"
+	 		android:layout_height="wrap_content"
+	 		android:text=" : "
+	 		android:textSize="13.4sp"
+	 		android:textColor="#ff828282" />
+	 		
+	 	<EditText
+	 		android:gravity="center"
+	 		android:paddingRight="2dp"
+	 		android:hint="ss"
+	 		android:layout_width="wrap_content"
+	 		android:layout_height="wrap_content"
+	 		android:background="@drawable/capture_time_bg"
+	 		android:textSize="13.4sp"
+	 		android:textColor="#ff828282"
+ 			android:textColorHint="#ff828282"
+ 			android:singleLine="true" />
+ 			
+ 			
+ 		<EditText
+ 			android:layout_marginLeft="52dp"
+  			android:paddingLeft="5dp"
+	 		android:paddingRight="2dp"
+	 		android:hint="hh"
+	 		android:layout_width="wrap_content"
+	 		android:layout_height="wrap_content"
+	 		android:background="@drawable/capture_time_bg"
+	 		android:textSize="13.4sp"
+	 		android:textColor="#ff828282"
+ 			android:textColorHint="#ff828282"
+ 			android:singleLine="true" />
+	 		
+	 	<TextView
+	 		android:layout_width="wrap_content"
+	 		android:layout_height="wrap_content"
+	 		android:text=" : "
+	 		android:textSize="13.4sp"
+	 		android:textColor="#ff828282" />
+	 		
+	 	<EditText
+	 		android:paddingLeft="5dp"
+	 		android:paddingRight="2dp"
+	 		android:hint="mm"
+	 		android:layout_width="wrap_content"
+	 		android:layout_height="wrap_content"
+	 		android:background="@drawable/capture_time_bg"
+	 		android:textSize="13.4sp"
+	 		android:textColor="#ff828282"
+ 			android:textColorHint="#ff828282"
+ 			android:singleLine="true" />
+	 		
+	 	<TextView
+	 		android:layout_width="wrap_content"
+	 		android:layout_height="wrap_content"
+	 		android:text=" : "
+	 		android:textSize="13.4sp"
+	 		android:textColor="#ff828282" />
+	 		
+	 	<EditText
+	 		android:paddingLeft="5dp"
+	 		android:paddingRight="2dp"
+	 		android:hint="ss"
+	 		android:layout_width="wrap_content"
+	 		android:layout_height="wrap_content"
+	 		android:background="@drawable/capture_time_bg"
+	 		android:textSize="13.4sp"
+	 		android:textColor="#ff828282"
+ 			android:textColorHint="#ff828282"
+ 			android:singleLine="true" />	
+  		
+ 	</LinearLayout>
+ 	
+ 	<EditText
+ 		android:paddingLeft="7dp"
+ 		android:layout_width="wrap_content"
+ 		android:layout_height="wrap_content"
+ 		android:background="@drawable/capture_filename"
+  		android:layout_marginLeft="11.7dp"
+  		android:layout_marginTop="33dp"
+ 		android:textSize="13.4sp"
+ 		android:textColor="#ff828282"
+ 		android:textColorHint="#ff828282"
+ 		android:hint="file_naming_1"
+ 		android:singleLine="true" />
+
+	
+	<LinearLayout
+		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:orientation="horizontal"
+  		android:layout_marginTop="13dp"
+  		android:layout_marginLeft="28dp">
+
+		<ImageButton
+			android:id="@+id/save"
+			android:layout_width="wrap_content"
+	  		android:layout_height="wrap_content"
+	  		android:background="@drawable/save_button" />
+	  		
+	  	<ImageButton
+	  		android:id="@+id/cancel"
+			android:layout_width="wrap_content"
+	  		android:layout_height="wrap_content"
+	  		android:background="@drawable/cancel_button"
+	  		android:layout_marginLeft="28dp" />
+
+  	</LinearLayout>
+
+</LinearLayout>

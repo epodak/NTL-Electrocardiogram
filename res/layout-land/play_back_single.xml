@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#fff4f4f4">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="70dp">
+		
+			<TextView
+				android:layout_marginLeft="8dp"
+				android:layout_marginTop="10dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="HR:\nPD:\nPQ:\nQRS:\nQT:\nQTc:\nQTd:\n"
+				android:textColor="#ff041f39"
+				android:textSize="9.6sp"/>
+	
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:text="   68\n   72 ms\n 112 ms\n   78 ms\n 352 ms\n 372 ms\n   60 ms"
+				android:textColor="#ff041f39"
+				android:textSize="9.6sp"/>
+				
+			<com.nasa.ecg.views.ECGLayout
+				android:id="@+id/ecgCurve"
+				android:layout_marginLeft="3dp"
+				android:layout_width="324dp"
+				android:layout_height="208dp" />
+				
+			<LinearLayout
+				android:layout_marginLeft="8dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="V2"
+					android:textColor="#ff041f39"
+					android:textSize="9.6sp"/>
+
+				<TextView
+					android:layout_marginTop="5dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Pa:\nPa:\nQa:\nQd:\nRa:\nRd:\nSa:"
+					android:textColor="#ff041f39"
+					android:textSize="9.6sp"/>
+					
+				<TextView
+					android:layout_marginTop="5dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Sd:\nRa:\nRd:\nSa:\nSd:\nSTJ:\nSTM:"
+					android:textColor="#ff041f39"
+					android:textSize="9.6sp"/>
+
+			</LinearLayout>
+			
+			<LinearLayout 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+				
+				<TextView
+					android:layout_marginTop="18dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="0.08 mV\n   - \n   - \n   - \n 1.04 mV\n    30 mV\n-2.44 mV"
+					android:textColor="#ff041f39"
+					android:textSize="9.6sp"/>
+				
+				<TextView
+					android:layout_marginTop="6dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="44 ms\n    - \n    - \n    - \n    - \n 0.05 mV\n 0.19 mV"
+					android:textColor="#ff041f39"
+					android:textSize="9.6sp"/>
+				
+			</LinearLayout>
+				
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="\nSTE:\nSLP:\nTa:\nT'a:\nQT:"
+				android:textColor="#ff041f39"
+				android:textSize="9.6sp"/>
+				
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="\n0.24 mV\n1.95\n0.41 mV\n   - \n 292 ms"
+				android:textColor="#ff041f39"
+				android:textSize="9.6sp"/>
+		</LinearLayout>
+
+	</LinearLayout>	
+
+	<ImageView 
+	  	android:layout_width="match_parent"
+	  	android:layout_height="match_parent"
+	  	android:src="@drawable/group_bg"/>
+
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="4dp">
+		<LinearLayout 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:background="@drawable/play_zoom_controls_bg"
+			android:layout_marginLeft="76dp">
+
+			<LinearLayout 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="3dp"
+				android:layout_marginLeft="4dp"
+				android:orientation="vertical"
+				android:gravity="center_horizontal">
+				
+				<ImageButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/zoom_up"
+					android:onClick="amplifyClicked"/>
+				
+				<TextView
+                    android:id="@+id/zoomUpDownText"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="2"
+					android:layout_marginTop="-3dp"
+					android:layout_marginBottom="-4dp"
+					android:textColor="#ff125ba8"
+					android:textSize="15.664sp"/>
+					
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="mm/mV"
+					android:textColor="#ff125ba8"
+					android:textSize="7.13sp"/>
+					
+				<ImageButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/zoom_down"
+					android:onClick="reduceClicked"/>
+				
+			</LinearLayout>
+			
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:layout_marginLeft="4dp"
+				android:background="@drawable/play_back_controls_bg">
+
+				<LinearLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+					android:layout_marginTop="7dp">
+					
+					<ImageButton
+						android:layout_marginTop="2.67dp"
+						android:layout_marginLeft="55dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content" 
+						android:src="@drawable/rewind"
+						android:background="@drawable/button_background"
+						android:onClick="rewindClicked"/>
+						
+					<ImageButton
+                        android:id="@+id/playButton"
+						android:layout_marginLeft="33.6dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content" 
+						android:src="@drawable/play"
+						android:background="@drawable/button_background"
+						android:onClick="playClicked"/>
+						
+					<ImageButton
+						android:layout_marginLeft="33.6dp"
+						android:layout_marginTop="2.67dp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content" 
+						android:src="@drawable/forward"
+						android:background="@drawable/button_background"
+						android:onClick="fastForwardClicked"/>
+					
+				</LinearLayout>
+	
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="12.8dp">
+					
+					<TextView
+						android:id="@+id/countUp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="6dp"
+						android:text="  00:05  "
+						android:textColor="@android:color/white"
+						android:textSize="8.5sp"
+						android:textStyle="bold"/>
+					
+					<SeekBar
+						android:id="@+id/seekBar"
+						android:layout_marginTop="4dp" 
+						android:layout_width="188dp"
+						android:layout_height="wrap_content"
+						style="@style/customSeekbar"
+						android:progress="0" />
+						
+					<TextView
+						android:id="@+id/countDown"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="6dp"
+						android:text="  -00:05  "
+						android:textColor="@android:color/white"
+						android:textSize="8.5sp"
+						android:textStyle="bold"/>
+					
+				</LinearLayout>
+				
+			</LinearLayout>
+
+			<LinearLayout 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="3dp"
+				android:layout_marginLeft="4dp"
+				android:orientation="vertical"
+				android:gravity="center_horizontal">
+
+				<ImageButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/zoom_left"
+					android:onClick="decompressClicked"/>
+				
+				<TextView
+					android:id="@+id/zoomLeftRightText"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="10"
+					android:layout_marginTop="-3dp"
+					android:layout_marginBottom="-4dp"
+					android:textColor="#ff125ba8"
+					android:textSize="15.664sp"/>
+					
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="mm/sec"
+					android:textColor="#ff125ba8"
+					android:textSize="7.13sp"/>
+					
+				<ImageButton
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/zoom_right"
+					android:onClick="compressClicked"/>
+			</LinearLayout>
+			
+
+		</LinearLayout>
+			
+	</RelativeLayout>
+
+
+	<LinearLayout
+	  android:orientation="vertical"
+	  android:layout_width="match_parent"
+	  android:layout_height="match_parent">
+	  	<RelativeLayout
+	  		android:layout_width="match_parent"
+	  		android:layout_height="wrap_content">
+	  		
+	  		<ImageButton
+	  			android:layout_width="wrap_content"
+	  			android:layout_height="wrap_content"
+	  			android:layout_marginTop="6dp"
+	  			android:layout_marginLeft="8dp"
+	  			android:layout_alignParentLeft="true"
+	  			android:background="@drawable/back_button"
+	  			android:onClick="backClicked"/>
+	  			
+	  		<ImageButton
+	  			android:layout_width="wrap_content"
+	  			android:layout_height="wrap_content"
+	  			android:layout_marginTop="6dp"
+	  			android:layout_marginRight="8dp"
+	  			android:layout_alignParentRight="true"
+	  			android:background="@drawable/home_button"
+	  			android:onClick="homeClicked"/>
+	  	</RelativeLayout>
+	  	
+	  	<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="4dp"
+			android:text="Demo Atrial Arrythmia - V"
+			android:textColor="@android:color/white"
+			android:layout_gravity="center_horizontal"
+			android:textSize="14sp"/>
+	</LinearLayout>
+	
+</FrameLayout>

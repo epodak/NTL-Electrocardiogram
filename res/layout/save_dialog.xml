@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="@drawable/home_delete_bg"
+  android:layout_gravity="center">
+
+	<TextView
+		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:textColor="@android:color/white"
+  		android:text="Saving File"
+  		android:textSize="18sp"
+  		android:layout_marginLeft="20dp"
+  		android:layout_marginTop="10dp" />
+  		
+  		
+  	<TextView
+		android:layout_width="250dp"
+  		android:layout_height="wrap_content"
+  		android:textColor="#FF3e4449"
+  		android:text="File 'Demo Atrial Flutter' has been saved in the memory."
+  		android:textSize="14sp"
+  		android:layout_marginLeft="28dp"
+  		android:layout_marginTop="20dp"
+  		android:gravity="center_horizontal" />
+
+
+	<ImageButton
+		android:id="@+id/saveClose"
+		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:layout_gravity="center_horizontal"
+  		android:background="@drawable/close_button" />
+
+</LinearLayout>

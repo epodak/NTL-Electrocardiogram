@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/setting_bg">
+	<LinearLayout
+	  android:orientation="vertical"
+	  android:layout_width="match_parent"
+	  android:layout_height="wrap_content">
+	  
+	  	<RelativeLayout
+	  		android:layout_width="match_parent"
+	  		android:layout_height="wrap_content"
+	  		android:layout_marginTop="6dp"
+	  		android:layout_marginRight="8dp"
+	  		android:layout_marginLeft="8dp">
+	  		
+	  		<ImageButton
+	  			android:layout_width="wrap_content"
+	  			android:layout_height="wrap_content"
+	  			android:layout_alignParentLeft="true"
+	  			android:background="@drawable/back_button"
+	  			android:onClick="backClicked"/>
+	  			
+	  		<ImageButton
+	  			android:layout_width="wrap_content"
+	  			android:layout_height="wrap_content"
+	  			android:layout_alignParentRight="true"
+	  			android:background="@drawable/home_button"
+	  			android:onClick="homeClicked"/>
+	  	</RelativeLayout>
+	  	
+	  	
+	  	<LinearLayout
+	  		android:layout_width="match_parent"
+	  		android:layout_height="wrap_content"
+	  		android:layout_marginTop="40dp"
+	  		android:layout_marginLeft="26dp"
+	  		android:orientation="vertical">
+	  		
+	  		
+	  		<TextView
+	  			android:layout_width="wrap_content"
+	  			android:layout_height="wrap_content"
+	  			android:text="Trace"
+	  			android:textColor="#FF8C8C8C"
+	  			textSize="28sp"
+	  			android:textStyle="bold" />
+	  			
+	  		<RadioGroup
+	  			android:id="@+id/radioGroup"
+	  			android:layout_width="wrap_content"
+	  			android:layout_height="wrap_content"
+	  			android:orientation="vertical"
+	  			android:layout_marginTop="7dp">
+	  			
+	  			<RadioButton
+	  				android:id="@+id/radio1"
+	  				android:layout_width="wrap_content"
+	  				android:layout_height="wrap_content"
+	  				android:button="@drawable/radio_button"
+	  				android:text="All 12 Leads"
+	  				android:textColor="#FF52585D"
+	  				 />
+	  				
+	  			<RadioButton
+	  				android:id="@+id/radio2"
+	  				android:layout_width="wrap_content"
+	  				android:layout_height="wrap_content"
+	  				android:button="@drawable/radio_button"
+	  				android:text="Limb Leads only"
+	  				android:textColor="#FF52585D"/>
+	  				
+	  			<RadioButton
+	  				android:id="@+id/radio3"
+	  				android:layout_width="wrap_content"
+	  				android:layout_height="wrap_content"
+	  				android:button="@drawable/radio_button"
+	  				android:text="Single Lead (Choose)"
+	  				android:textColor="#FF52585D"/>
+	
+	 		</RadioGroup>
+	 		
+	 		<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Select Trace channel that"
+				android:textColor="#FF8C8C8C"
+				textSize="15sp"
+				android:layout_marginTop="14dp" />
+				
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="you want to trace or measure"
+				android:textColor="#FF8C8C8C"
+				textSize="12sp" />
+	  		
+	  	</LinearLayout>
+	</LinearLayout>
+	
+	<ImageButton
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="3dp"
+		android:background="@drawable/continue_button"
+		android:onClick="continueClicked" />
+	
+</RelativeLayout>

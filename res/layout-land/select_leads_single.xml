@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#fff4f4f4">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="70dp">
+		
+			<TextView
+				android:layout_marginLeft="8dp"
+				android:layout_marginTop="10dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="HR:\nPD:\nPQ:\nQRS:\nQT:\nQTc:\n"
+				android:textColor="#ff041f39"
+				android:textSize="9.6sp"/>
+	
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:text="   68\n   72 ms\n 112 ms\n   78 ms\n 352 ms\n 372 ms"
+				android:textColor="#ff041f39"
+				android:textSize="9.6sp"/>
+				
+			<com.nasa.ecg.views.ECGLayout
+				android:id="@+id/ecgCurve"
+				android:layout_marginLeft="3dp"
+				android:layout_width="320dp"
+				android:layout_height="208dp" />
+				
+			<LinearLayout
+				android:layout_marginLeft="8dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="V2"
+					android:textColor="#ff041f39"
+					android:textSize="9.6sp"/>
+
+				<TextView
+					android:layout_marginTop="5dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Pa:\nPa:\nQa:\nQd:\nRa:\nRd:\nSa:"
+					android:textColor="#ff041f39"
+					android:textSize="9.6sp"/>
+					
+				<TextView
+					android:layout_marginTop="5dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Sd:\nRa:\nRd:\nSa:\nSd:\nSTJ:\nSTM:"
+					android:textColor="#ff041f39"
+					android:textSize="9.6sp"/>
+
+			</LinearLayout>
+			
+			<LinearLayout 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+				
+				<TextView
+					android:layout_marginTop="18dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="0.08 mV\n   - \n   - \n   - \n 1.04 mV\n    30 mV\n-2.44 mV"
+					android:textColor="#ff041f39"
+					android:textSize="9.6sp"/>
+				
+				<TextView
+					android:layout_marginTop="6dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="44 ms\n    - \n    - \n    - \n    - \n 0.05 mV\n 0.19 mV"
+					android:textColor="#ff041f39"
+					android:textSize="9.6sp"/>
+				
+			</LinearLayout>
+				
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="\nSTE:\nSLP:\nTa:\nT'a:\nQT:"
+				android:textColor="#ff041f39"
+				android:textSize="9.6sp"/>
+				
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="\n0.24 mV\n1.95\n0.41 mV\n   - \n 292 ms"
+				android:textColor="#ff041f39"
+				android:textSize="9.6sp"/>
+		</LinearLayout>
+
+	</LinearLayout>
+
+	
+	
+	<ImageView 
+	  	android:layout_width="match_parent"
+	  	android:layout_height="match_parent"
+	  	android:src="@drawable/group_bg"/>
+
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_marginLeft="4dp"
+			android:layout_marginBottom="4dp"
+			android:background="@drawable/navigator_2controls_bg"
+			android:gravity="center_vertical">
+	
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="4dp"
+				android:background="@drawable/navigator_button_bg"
+				android:text="V1"
+				android:textColor="@android:color/white"
+				android:textSize="11.52sp"
+				android:gravity="center"
+				android:onClick="singleClicked"/>
+
+			<Button 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="4dp"
+				android:background="@drawable/navigator_button_bg"
+				android:text="V3"
+				android:textColor="@android:color/white"
+				android:textSize="11.52sp"
+				android:gravity="center"
+				android:onClick="singleClicked"/>
+				
+			<ImageButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="32dp"
+				android:layout_alignParentRight="true"
+				android:background="@drawable/play_button"
+				android:onClick="playClicked"/>
+
+		</LinearLayout>
+			
+	</RelativeLayout>
+
+
+	<LinearLayout
+	  android:orientation="vertical"
+	  android:layout_width="match_parent"
+	  android:layout_height="match_parent">
+	  	<RelativeLayout
+	  		android:layout_width="match_parent"
+	  		android:layout_height="wrap_content">
+	  		
+	  		<ImageButton
+	  			android:layout_width="wrap_content"
+	  			android:layout_height="wrap_content"
+	  			android:layout_marginTop="6dp"
+	  			android:layout_marginLeft="8dp"
+	  			android:layout_alignParentLeft="true"
+	  			android:background="@drawable/back_button"
+	  			android:onClick="backClicked"/>
+	  			
+	  		<ImageButton
+	  			android:layout_width="wrap_content"
+	  			android:layout_height="wrap_content"
+	  			android:layout_marginTop="6dp"
+	  			android:layout_marginRight="8dp"
+	  			android:layout_alignParentRight="true"
+	  			android:background="@drawable/home_button"
+	  			android:onClick="homeClicked"/>
+	  	</RelativeLayout>
+	  	
+	  	<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="4dp"
+			android:text="Demo Atrial Arrythmia - V"
+			android:textColor="@android:color/white"
+			android:layout_gravity="center_horizontal"
+			android:textSize="14sp"/>
+	</LinearLayout>
+	
+</FrameLayout>

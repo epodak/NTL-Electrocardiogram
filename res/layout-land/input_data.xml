@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/input_bg">
+	<LinearLayout
+	  android:orientation="vertical"
+	  android:layout_width="match_parent"
+	  android:layout_height="wrap_content">
+	  
+	  	<RelativeLayout
+	  		android:layout_width="match_parent"
+	  		android:layout_height="wrap_content"
+	  		android:layout_marginTop="6dp"
+	  		android:layout_marginRight="8dp"
+	  		android:layout_marginLeft="8dp">
+	  		
+	  		<ImageButton
+	  			android:layout_width="wrap_content"
+	  			android:layout_height="wrap_content"
+	  			android:layout_alignParentLeft="true"
+	  			android:background="@drawable/back_button"
+	  			android:onClick="backClicked"/>
+	  			
+	  		<ImageButton
+	  			android:layout_width="wrap_content"
+	  			android:layout_height="wrap_content"
+	  			android:layout_alignParentRight="true"
+	  			android:background="@drawable/home_button"
+	  			android:onClick="homeClicked"/>
+	  	</RelativeLayout>
+	  	
+	  	
+	  	<LinearLayout
+	  		android:layout_width="wrap_content"
+	  		android:layout_height="wrap_content"
+	  		android:layout_marginTop="31dp"
+	  		android:orientation="horizontal">
+
+		  	<LinearLayout
+		  		android:layout_width="wrap_content"
+		  		android:layout_height="wrap_content"
+		  		android:orientation="vertical"
+		  		android:layout_marginLeft="101dp">
+
+		  		<TextView
+		  			android:layout_marginTop="12dp"
+		  			android:layout_width="wrap_content"
+		  			android:layout_height="wrap_content"
+		  			android:textColor="#FF8c8c8c"
+		  			android:textSize="18sp"
+		  			android:textStyle="bold"
+		  			android:text="File Name"/>
+		  			
+		  		<TextView
+		  			android:layout_width="wrap_content"
+		  			android:layout_height="wrap_content"
+		  			android:layout_marginTop="18dp"
+		  			android:textColor="#FF8c8c8c"
+		  			android:textSize="18sp"
+		  			android:textStyle="bold"
+		  			android:text="Code"/>
+		  			
+		  		<TextView
+		  			android:layout_width="wrap_content"
+		  			android:layout_height="wrap_content"
+		  			android:layout_marginTop="18dp"
+		  			android:textColor="#FF8c8c8c"
+		  			android:textSize="18sp"
+		  			android:textStyle="bold"
+		  			android:text="Born"/>
+
+		  		<TextView
+		  			android:layout_width="wrap_content"
+		  			android:layout_height="wrap_content"
+		  			android:layout_marginTop="18dp"
+		  			android:textColor="#FF8c8c8c"
+		  			android:textSize="18sp"
+		  			android:textStyle="bold"
+		  			android:text="Last ECG"/>
+		  	</LinearLayout>
+		  	<LinearLayout
+		  		android:layout_width="wrap_content"
+		  		android:layout_height="wrap_content"
+		  		android:orientation="vertical"
+		  		android:layout_marginLeft="32dp">
+		  		
+		  		<EditText
+		  		    android:inputType="text"
+		  		    android:id="@+id/input_fileName"
+		  			android:layout_width="wrap_content"
+		  			android:layout_height="wrap_content"
+		  			android:layout_marginTop="6dp"
+		  			android:background="@drawable/input_input"
+		  			android:textColor="#FF8c8c8c"
+		  			android:textColorHint="#FF8c8c8c"
+		  			android:textSize="16sp"
+		  			android:paddingLeft="16dp"
+		  			android:paddingRight="16dp"
+		  			android:singleLine="true"/>
+
+		  		<EditText
+		  		    android:id="@+id/input_code"
+		  			android:layout_width="wrap_content"
+		  			android:layout_height="wrap_content"
+		  			android:layout_marginTop="6dp"
+		  			android:background="@drawable/input_input"
+		  			android:textColor="#FF8c8c8c"
+		  			android:textColorHint="#FF8c8c8c"
+		  			android:textSize="16sp"
+		  			android:paddingLeft="16dp"
+		  			android:paddingRight="16dp"
+		  			android:singleLine="true"/>
+		  		
+		  		<EditText
+		  		    android:id="@+id/input_born"
+		  		    android:inputType="date"
+		  			android:layout_width="wrap_content"
+		  			android:layout_height="wrap_content"
+		  			android:layout_marginTop="6dp"
+		  			android:background="@drawable/input_input"
+		  			android:textColor="#FF8c8c8c"
+		  			android:textColorHint="#FF8c8c8c"
+		  			android:textSize="16sp"
+		  			android:hint="dd/mm/yyyy"
+		  			android:paddingLeft="16dp"
+		  			android:paddingRight="16dp"
+		  			android:singleLine="true"/>
+		  			
+		  		<EditText
+		  		    android:id="@+id/input_lastEcg"
+		  		    android:inputType="date"
+		  			android:layout_width="wrap_content"
+		  			android:layout_height="wrap_content"
+		  			android:layout_marginTop="6dp"
+		  			android:background="@drawable/input_input"
+		  			android:textColor="#FF8c8c8c"
+		  			android:textColorHint="#FF8c8c8c"
+		  			android:textSize="16sp"
+		  			android:hint="dd/mm/yyyy"
+		  			android:paddingLeft="16dp"
+		  			android:paddingRight="16dp"
+		  			android:singleLine="true"/>
+		  		
+		  	</LinearLayout>
+	  	</LinearLayout>
+	</LinearLayout>
+	
+	<ImageButton
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="3dp"
+		android:background="@drawable/continue_button"
+		android:onClick="continueClicked" />
+	
+</RelativeLayout>

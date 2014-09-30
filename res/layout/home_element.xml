@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="53dp"
+  android:orientation="vertical">
+
+	<FrameLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<ImageView
+			android:id="@+id/homeElementSelectedImage"
+		  	android:layout_width="wrap_content"
+		  	android:layout_height="wrap_content"
+		  	android:background="@drawable/home_element_selected"
+		  	android:layout_marginLeft="8dp"
+		  	android:layout_gravity="center_vertical"
+		  	android:visibility="invisible" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+		  	android:orientation="horizontal">
+	
+		  	<ImageView
+		  		android:id="@+id/homeElementFolderImage"
+			  	android:layout_width="wrap_content"
+			  	android:layout_height="wrap_content"
+			  	android:background="@drawable/home_folder"
+			  	android:layout_marginLeft="11dp"
+			  	android:layout_gravity="center_vertical" />
+		  	
+			<LinearLayout
+				android:layout_width="match_parent"
+			  	android:layout_height="wrap_content"
+			  	android:orientation="vertical"
+			  	android:layout_marginLeft="18dp">
+			  
+				<TextView
+					android:id="@+id/homeElementNameText"
+					android:layout_width="wrap_content"
+				  	android:layout_height="wrap_content"
+				  	android:textSize="14sp"
+				  	android:textColor="#FF0F92CD"
+				  	android:text="Demo Atrial Arrythmia"/>
+			  	
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+			  	
+				  	<TextView 
+				  		android:id="@+id/homeElementCodeText"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FF000000"
+						android:text="Code:"/>
+		
+					<TextView
+						android:id="@+id/homeElementCodeValueText"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="10sp"
+						android:textColor="#FF000000"
+						android:text=" 00005312999"/>
+					  	
+				</LinearLayout>
+				
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+			  	
+				  	<TextView
+				  		android:id="@+id/homeElementBornText" 
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FF000000"
+						android:text="Born:"/>
+		
+					<TextView
+						android:id="@+id/homeElementBornValueText"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="10sp"
+						android:textColor="#FF000000"
+						android:text=" 05/31/1983"/>
+						
+				  	<TextView
+				  		android:id="@+id/homeElementLastECGText" 
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FF000000"
+						android:text="  Last ECG:"/>
+		
+					<TextView
+						android:id="@+id/homeElementLastECGValueText"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="10sp"
+						android:textColor="#FF000000"
+						android:text=" 08/24/2011"/>
+					  	
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</FrameLayout>
+
+	<ImageView
+		android:layout_width="wrap_content"
+	 	android:layout_height="wrap_content"
+	 	android:background="@drawable/home_element_line"
+	 	android:layout_marginTop="2dp"
+	 	android:layout_gravity="center_horizontal" />
+	
+</LinearLayout>

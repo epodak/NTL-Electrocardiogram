@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- The number of elements in the home screen -->
+	<integer name="home_elements">20</integer>
+
+	<!-- The loading time for the splash screens -->
+	<integer name="splashTime">0</integer>
+
+	<!-- The loading time for the loading screens -->
+	<integer name="loadingTime">0</integer>
+
+	<!-- The total time for the animation to take to perform normal play from 
+		the start to the end. -->
+	<integer name="normalPlayTime">10000</integer>
+
+	<!-- The total time for the animation to take to perform fast forward play 
+		from the start to the end. Usually, this value should be less than normalPlayTime. -->
+	<integer name="fastForwardPlayTime">3000</integer>
+
+	<!-- The total time for the animation to take to perform rewind play from 
+		the start to the end. -->
+	<integer name="rewindPlayTime">10000</integer>
+
+	<!-- The minimum compression value that the compression cannot go below 
+		it. -->
+	<integer name="minCompression">1</integer>
+
+	<!-- The minimum amplification value that the amplification cannot go below 
+		it. -->
+	<integer name="minAmplification">1</integer>
+
+	<!-- The compression factor in percentage when the user wants to decompress 
+		the curve, the curve will be expanded by compressionFactor% -->
+	<integer name="compressionFactor">120</integer>
+
+	<!-- The amplification factor in percentage when the user wants to amplify 
+		the curve, the curve will be expanded by compressionFactor% -->
+	<integer name="amplificationFactor">120</integer>
+	
+	<!-- The minimum compression value that the compression that will be displayed in the view. -->
+	<integer name="minCompressionView">5</integer>
+
+	<!-- The minimum amplification value that that will be displayed in the view. -->
+	<integer name="minAmplificationView">5</integer>
+
+	<!-- The compression factor in percentage when the user wants to decompress 
+		the curve, the curve will be expanded by compressionFactor% this will be displayed in the view-->
+	<integer name="compressionFactorView">200</integer>
+
+	<!-- The amplification factor in percentage when the user wants to amplify 
+		the curve, the curve will be expanded by compressionFactor% this will be displayed in the view-->
+	<integer name="amplificationFactorView">200</integer>
+
+	<!-- The spaces between the small lines in the grid. -->
+	<integer name="gridSmallSpaces">4</integer>
+
+	<!-- The spaces between the medium lines in the grid. -->
+	<integer name="gridMediumSpaces">20</integer>
+
+	<!-- The spaces between the large lines in the grid. -->
+	<integer name="gridLargeSpaces">40</integer>
+
+    <!-- The background color for the buttons to be displayed as long as the user is pressing the button. -->
+	<color name="buttonPressedBackground">#ff069be0</color>
+
+	<!-- The number of iterations the curve shall take -->
+	<integer name="numberOfIterations">2</integer>
+
+</resources>

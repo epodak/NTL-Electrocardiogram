@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/select_bg"
+  android:gravity="center_horizontal">
+
+	<RelativeLayout
+  		android:layout_width="match_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_marginTop="6dp"
+  		android:layout_marginRight="8dp"
+  		android:layout_marginLeft="8dp">
+  			
+  		<ImageButton
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:layout_alignParentRight="true"
+  			android:background="@drawable/home_button"
+	  			android:onClick="homeClicked"/>
+  	</RelativeLayout>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="4dp"
+		android:text="Demo Atrial Arrythmia"
+		android:textColor="@android:color/white"/>
+	
+	<Button 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="42dp"
+		android:background="@drawable/leads_button"
+		android:text="All 12 leads"
+		android:textColor="@color/leads_button_color"
+		android:onClick="leadClicked"/>
+		
+
+	<Button 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="12dp"
+		android:background="@drawable/leads_button"
+		android:text="I, II, III"
+		android:textColor="@color/leads_button_color"
+		android:onClick="leadClicked"/>
+		
+	<Button 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="12dp"
+		android:background="@drawable/leads_button"
+		android:text="aVR, aVL, aVF"
+		android:textColor="@color/leads_button_color"
+		android:onClick="leadClicked"/>
+		
+	<Button 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="12dp"
+		android:background="@drawable/leads_button"
+		android:text="All precordial"
+		android:textColor="@color/leads_button_color"
+		android:onClick="leadClicked"/>
+		
+	<Button 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="12dp"
+		android:background="@drawable/leads_button"
+		android:text="V1, V2, V3"
+		android:textColor="@color/leads_button_color"
+		android:onClick="leadClicked"/>
+		
+	<Button 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="12dp"
+		android:background="@drawable/leads_button"
+		android:text="V4, V5, V6"
+		android:textColor="@color/leads_button_color"
+		android:onClick="leadClicked"/>
+		
+	<Button 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="12dp"
+		android:background="@drawable/leads_button"
+		android:text="Free Choose 1"
+		android:textColor="@color/leads_button_color"
+		android:onClick="leadClicked"/>
+		
+	<Button 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="12dp"
+		android:background="@drawable/leads_button"
+		android:text="Free Choose 3"
+		android:textColor="@color/leads_button_color"
+		android:onClick="leadClicked"/>
+
+</LinearLayout>
